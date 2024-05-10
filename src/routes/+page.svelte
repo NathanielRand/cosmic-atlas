@@ -1,6 +1,6 @@
 <script>
-	import { Section } from 'flowbite-svelte-blocks';
-	import { Button, Hr } from 'flowbite-svelte';
+	import { Section, Social } from 'flowbite-svelte-blocks';
+	import { Button, Hr, Badge } from 'flowbite-svelte';
 	import { ArrowRightOutline } from 'flowbite-svelte-icons';
 
 	// Image 
@@ -20,22 +20,89 @@
 				<h2 class="font-bold text-2xl dark:text-white">Sol</h2>
 				<p class="text-gray-400 font-thin mt-2">Galaxy</p>
 				<h3 class="font-bold text-2xl dark:text-white">Milky Way</h3>
+				<p class="text-gray-400 font-thin mt-6">Coordinates</p>
+				<h3 class="font-bold dark:text-gray-100">RA 0h 29m 15s | Dec +1° 46′ 52″</h3>
 				<Hr />
 				<ul class="dark:text-white">
-					<li>Coordinates: RA 0h 29m 15s | Dec +1° 46′ 52″</li>
 					<li>Moons: <a href="#">Phobos</a></li>
 					<li>Moons: <a href="#">Deimos</a></li>
-					<li>Orbital Period: 687 days</li>
-					<li>Diameter: 1,275 km</li>
-					<li>Radius: 2,106.1 mi</li>
-					<li>Mass: 0.10643</li>
-					<li>Length of day: 1d 0h 37m</li>
-					<li>Distance from Sun: 141.6 million mi</li>
+					<li class="mb-2"><Badge color="yellow">Habitability: 60%</Badge></li>
+					
+					<p class="text-gray-400 text-2xl font-thin my-4">Atmosphere</p>
+					<li>
+						<div class="flex">
+							<div class="w-1/2">
+								<ul>
+									<li>Carbon: 96.0%</li>
+									<li>Nitrogen: 2.1%</li>
+									<li>Argon: 1.9%</li>
+									<li>Oxygen: 0.145%</li>
+								</ul>
+							</div>
+							<div class="w-1/2">
+								<ul>
+									<li>Carbon Monoxide: >0%</li>
+									<li>Water: >0%</li>
+									<li>Methane: >0%</li>
+									<li>Gases: >0%</li>
+								</ul>
+							</div>
+						</div>
+					</li>
 				</ul>
 			</div>
 		</div>		
 	</div>
-</Section>
+	<hr class="w-2/5 mx-auto"/>
+	<Social>
+		<div class="flex flex-col items-center justify-center  border-b rounded-xl p-4">
+			<dt class="mb-2 text-3xl md:text-4xl font-extrabold">-65°<small>C</small></dt>
+			<dd class="font-light text-gray-500 dark:text-gray-400">temperature</dd>
+		</div>
+		<div class="flex flex-col items-center justify-center  border-b rounded-xl p-4">
+			<dt class="mb-2 text-3xl md:text-4xl font-extrabold">14%</dt>
+			<dd class="font-light text-gray-500 dark:text-gray-400">water</dd>
+		</div>
+		<div class="flex flex-col items-center justify-center border-b rounded-xl p-4">
+			<dt class="mb-2 text-3xl md:text-4xl font-extrabold">Solar</dt>
+			<dd class="font-light text-gray-500 dark:text-gray-400">energy</dd>
+		</div>
+		<div class="flex gap-4">
+			<div class="w-full flex flex-col items-center text-center justify-center border-b rounded-xl p-4">
+				<dt class="mb-2 text-3xl md:text-xl font-extrabold">20°C - -153°C</dt>
+				<dd class="font-light text-gray-500 dark:text-gray-400">temperature range</dd>
+			</div>
+		</div>
+		<div class="flex flex-col items-center justify-center  border-b rounded-xl p-4">
+			<dt class="mb-2 text-3xl md:text-4xl font-extrabold">1<small>d</small> 0<small>h</small> 37<small>m</small></dt>
+			<dd class="font-light text-gray-500 dark:text-gray-400">Length of Day</dd>
+		</div>
+		<div class="flex flex-col items-center justify-center  border-b rounded-xl p-4">
+			<dt class="mb-2 text-3xl md:text-4xl font-extrabold">687<small>days</small></dt>
+			<dd class="font-light text-gray-500 dark:text-gray-400">Orbital Period</dd>
+		</div>
+		<div class="flex flex-col items-center justify-center border-b rounded-xl p-4">
+			<dt class="mb-2 text-3xl md:text-4xl font-extrabold">1,275 <small class="text-sm">km</small></dt>
+			<dd class="font-light text-gray-500 dark:text-gray-400">Diameter</dd>
+		</div>
+		<div class="flex flex-col items-center justify-center  border-b rounded-xl p-4">
+			<dt class="mb-2 text-3xl md:text-3xl font-extrabold">6.42 x 1023 <small class="text-sm">kg</small></dt>
+			<dd class="font-light text-gray-500 dark:text-gray-400">Mass</dd>
+		</div>
+		<div class="flex flex-col items-center justify-center  border-b rounded-xl p-4">
+			<dt class="mb-2 text-3xl md:text-4xl font-extrabold">228 <small class="text-sm">mil km</small></dt>
+			<dd class="font-light text-gray-500 dark:text-gray-400">Distance from Sun</dd>
+		</div>
+		<div class="flex flex-col items-center justify-center  border-b rounded-xl p-4">
+			<dt class="mb-2 text-3xl md:text-4xl font-extrabold">≈0.020 <small class="text-sm">kg/m3</small></dt>
+			<dd class="font-light text-gray-500 dark:text-gray-400">Atmosphere</dd>
+		</div>
+		<div class="flex flex-col items-center justify-center  border-b rounded-xl p-4">
+			<dt class="mb-2 text-3xl md:text-4xl font-extrabold">0%</dt>
+			<dd class="font-light text-gray-500 dark:text-gray-400">Terraforming</dd>
+		</div>
+	</Social>
+  </Section>
 
 <Section>
 	<div class="container mx-auto px-8">
